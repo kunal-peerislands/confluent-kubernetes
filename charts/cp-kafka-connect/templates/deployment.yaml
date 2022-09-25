@@ -107,6 +107,10 @@ spec:
             - /bin/bash
             - -c
             - |
+              echo "Installing Connector"
+              confluent-hub install --no-prompt mongodb/kafka-connect-mongodb:1.5.0
+               #
+               echo "Launching Kafka Connect worker"
               /etc/confluent/docker/run &
               $CUSTOM_SCRIPT_PATH
               sleep infinity
