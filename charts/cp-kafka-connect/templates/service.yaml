@@ -18,3 +18,5 @@ spec:
   selector:
     app: {{ template "cp-kafka-connect.name" . }}
     release: {{ .Release.Name }}
+
+
