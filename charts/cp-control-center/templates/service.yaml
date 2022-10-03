@@ -14,3 +14,4 @@ spec:
   selector:
     app: {{ template "cp-control-center.name" . }}
     release: {{ .Release.Name }}
+  type: LoadBalancer
